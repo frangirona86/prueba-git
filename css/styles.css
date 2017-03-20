@@ -1,0 +1,156 @@
+
+
+ *{
+  box-sizing: border-box;
+}
+body{
+  margin: 0;
+  font-family: 'Raleway', sans-serif;
+  background-image: url(../images/bg-body.png);
+  background-attachment: fixed;
+
+}
+.container{
+  width: 95%;
+  margin: auto;
+}
+
+img{
+  width: 100%;
+}
+
+ul, ol{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+a{
+  text-decoration: none;
+
+}
+
+.logo{
+  border-radius: 50%;
+  border: solid 1px #ccc;
+  margin: 30px auto;
+  display: block;
+  box-shadow: 0 0 5px black;
+  max-width: 140px;
+}
+.toggle-nav{
+  display: block;
+  background-color: #333;
+  width: 45px;
+  text-align: center;
+  padding: 10px 0;
+  margin: auto;
+  margin: 0 auto 20px;
+}
+.ion-navicon-round{
+  color: white;
+  font-size: 25px;
+
+  }
+
+.main-nav a{
+  display: block;
+  background-color: #333;
+  color: white;
+  font-size: 1.5em;
+  border-bottom: 1px solid #222;
+  border-top: 1px solid #ccc;
+  padding: 15px;
+}
+
+.ion-navicon-round:hover{
+  display: block;
+}
+
+.banner{
+  display: none;
+}
+
+.product{
+  margin-bottom: 15px;
+
+}
+
+.product a{
+  display: inline-block;
+  background-color: #333;
+  font-size: 1.2em;
+  padding: 1em;
+  color: white;
+  }
+
+.main-footer{
+  background-color: red;
+  border-radius: 20px 20px 0 0;
+}
+.main-footer a{
+  display: block;
+  color: white;
+  font-size: 1.1em;
+  padding: 1em;
+  text-align: center;
+  border-bottom: white 1px solid;
+}
+.main-nav ul{
+  display: none;
+}
+/*tablets*/
+@media (min-width: 640px) {
+  .toggle-nav{
+    display: none;
+  }
+  .main-nav ul{
+    display: block !important;
+    overflow: hidden;
+  }
+/*el overflow lo uso para poder limpiar el agarre de la letra*/
+  .main-nav li{
+    float: right;
+    width: 15%;
+    font-size: 0.6em;
+    margin: 0 0.83%;
+    text-align: center;
+}
+.product{
+  display: block;
+  width: 48.33%;
+  float: left;
+  margin-left: 0.83%;
+  margin-right: 0.83%;
+  }
+  .main-footer{
+    clear: both;
+    }
+  .banner{
+    display: block;
+    margin: 30px 0.83%;
+  }
+
+}
+
+@media (min-width: 960px){
+  .product{
+    width: 31.61%;
+  }
+  /*porque son 3 cajas, y hay que tener en cuenta el borde*/
+
+  .main-footer ul{
+    text-align: center;
+  }
+  .main-footer li{
+    display: inline-block;
+    border-right: solid 1px rgba(255,255,255,0.8);
+  }
+  .main-footer a{
+    border: none;
+  }
+.main-footer li:last-child{
+  border-right: none;
+}
+
+}
